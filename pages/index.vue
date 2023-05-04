@@ -138,7 +138,12 @@
     <div class="col-lg-7">
       <card card-body-classes="table-full-width">
         <h4 slot="header" class="card-title">Striped table</h4>
-        <el-table :data="tableData">
+        <el-table
+          header-cell-class-name="table-transparent"
+          header-row-class-name="table-transparent"
+          row-class-name="table-transparent"
+          :data="tableData"
+        >
           <el-table-column
             min-width="150"
             sortable

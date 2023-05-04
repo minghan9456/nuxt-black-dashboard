@@ -283,15 +283,15 @@ $spacer: 1rem !default;
 $spacers: () !default;
 $spacers: map-merge((
   0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
+  1: calc($spacer * .25),
+  2: calc($spacer * .5),
   3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3),
-  'sm': ($spacer * 2),
-  'md': ($spacer * 4),
-  'lg': ($spacer * 6),
-  'xl': ($spacer * 8)
+  4: calc($spacer * 1.5),
+  5: calc($spacer * 3),
+  'sm': calc($spacer * 2),
+  'md': calc($spacer * 4),
+  'lg': calc($spacer * 6),
+  'xl': calc($spacer * 8)
 ), $spacers);
 
 $padding-base-vertical:        .5rem !default;
@@ -405,7 +405,7 @@ $font-paragraph:               1rem          !default;
 $font-weight-base:            $font-weight-normal !default;
 $shape-height-base:            1.428571 !default;
 
-$headings-margin-bottom:      ($spacer / 2);
+$headings-margin-bottom:      calc($spacer / 2);
 $headings-font-family:        inherit !default;
 $headings-font-weight:        $font-weight-normal !default;
 $headings-line-height:        1.2 !default;
